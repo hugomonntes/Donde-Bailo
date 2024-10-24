@@ -1,0 +1,41 @@
+---
+import Header from "../components/Header.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>Donde Bailo</title>
+		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-slate-900">
+		<Header/>
+		<slot />
+	</body>
+</html>
+<style>
+	html {
+		font-family: Urbanist, sans-serif;
+		scroll-behavior: smooth;
+	}
+
+	html::-webkit-scrollbar {
+    width: 8px;              
+	}
+
+	html::-webkit-scrollbar-track {
+		background-color: rgb(15 23 42);       
+	}
+
+	html::-webkit-scrollbar-thumb {
+		background-color: rgb(255, 255, 255);
+		border-radius: 20px;
+	}
+
+	body {
+		margin: 0;
+	}
+</style>
